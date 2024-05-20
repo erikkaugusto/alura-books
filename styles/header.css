@@ -28,12 +28,12 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
 }
 
 .container__botao:checked~.lista-menu {
     /* Se o container__botao estiver checked, atribui display: block para a lista-menu */
     display: block;
+    width: auto;
 }
 
 .lista-menu__titulo,
@@ -101,6 +101,15 @@
     }
 
     .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
         display: none;
     }
 }
