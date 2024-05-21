@@ -1,13 +1,13 @@
 .topicos {
     background: var(--azul-degrade);
     text-align: center;
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 .topicos__titulo {
     color: var(--branco);
     font-weight: 300;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
 }
 
 .topicos__lista {
@@ -36,5 +36,11 @@
 
     .topicos__link {
         font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 3em 30vw;
     }
 }
